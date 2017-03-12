@@ -2,11 +2,325 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Фотографии</title>
   </head>
   <body>
+    <header class="page-header">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+
+          <div class="main-nav__logo-wrapper">
+            <div class="logo logo--header">
+              <img class="logo__image logo" src="http://placehold.it/100x50">
+            </div>
+          </div>
+
+          <div class="main-nav__toggle-button-wrapper">
+            <button class="button button--toggle-header"></button>
+          </div>
+
+          <ul class="main-nav__item-list">
+            <li class="main-nav__item"><a href="/" class="main-nav__item">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="/photo.html" class="main-nav__item">Фотографии</a></li>
+            <li class="main-nav__item"><a href="/form.html" class="main-nav__item">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item">Html Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main class="page-content">
+
+      <section class="page-image">
+        <div class="page-image__wrapper">
+          <div class="page-image__title">Фотографии пользователей</div>
+        </div>
+      </section>
+
+      <section class="page-description">
+        <div class="page-image__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </div>
+      </section>
+
+      <section class="image-list">
+
+        <div class="image-list__item image-list__item--main">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Анна
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">5 минут</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Пригать или нет?
+              Напишите в коментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">215</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Левон
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">5 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">356</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Антон
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">12 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Соседы будут рады!
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">666</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Борис
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">20 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Здесь могла быть цитата о высоком и вечном.
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">215</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Сергей
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">25 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Самая кубанская в мире!
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Максим
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">40 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Где снег-то?
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-list__item">
+          <div class="image-list__item-wrapper">
+            <div class="image-list__image-wrapper">
+              <div class="image-list__image-label">Панорама дня</div>
+              <img class="image-list__image" src="http://placehold.it/350x150">
+            </div>
+            <div class="image-list__title">
+              <div class="image-list__text">
+                Надежда
+              </div>
+              <div class="image-list__time">
+                (<span class="js-time">45 часов</span> назад)
+              </div>
+            </div>
+            <div class="image-list__description">
+              Всем GM и взаимные лайки!
+            </div>
+            <div class="image-list__like-wrapper">
+              <div class="like">
+                <div class="like__text">
+                  Нравится: <span class="js-like-count">2560</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="page-description">
+        <div class="page-image__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </div>
+      </section>
+
+      <section class="upload-image">
+        <div class="upload-image__wrapper">
+          <img class="upload-image__image" src="http://placehold.it/350x550">
+        </div>
+        <div class="upload-image__controls">
+          <div class="upload-image__controls-wrapper">
+            <div class="upload-image__field">
+              <input type="radio" class="field-radio field-radio--crop" name="upload-image-control">
+              <label></label>
+            </div>
+            <div class="upload-image__field">
+              <input type="radio" class="field-radio field-radio--background" name="upload-image-control">
+              <label></label>
+            </div>
+            <div class="upload-image__field">
+              <input type="radio" class="field-radio field-radio--opacity" name="upload-image-control">
+              <label></label>
+            </div>
+          </div>
+          <div class="upload-image__slider">
+            <input type="range">
+          </div>
+        </div>
+        <div class="upload-image__button-list">
+          <div class="upload-image__button-item">
+            <button class="button button--primary">Запостить</button>
+          </div>
+          <div class="upload-image__button-item">
+            <button class="button button--secondary">Отмена</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-common">
+      <div class="footer-common__wrapper">
+        <div class="footer-common__image-wrapper">
+
+          <div class="logo logo--common-footer">
+            <img class="logo__image logo" src="http://placehold.it/100x50">
+          </div>
+
+        </div>
+        <div class="footer-common__social-wrapper">
+          <div class="social">
+            <div class="social__wrapper">
+              <div class="social__item">
+                <a class="button button-twitter" href="#"></a>
+              </div>
+              <div class="social__item">
+                <a class="button button-facebook" href="#"></a>
+              </div>
+              <div class="social__item">
+                <a class="button button-play" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="created-by">
+          <div class="created-by__wrapper">
+            <div class="created-by__text">
+              Разработано
+            </div>
+            <div class="created-by__image-wrapper">
+              <img class="created-by__image" src="http://placehold.it/30x40">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
   </body>
 </html>

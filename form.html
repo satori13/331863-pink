@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Фотографии</title>
+    <title>HTML Academy: Конкурс</title>
   </head>
   <body>
     <header class="page-header">
@@ -22,8 +22,8 @@
 
           <ul class="main-nav__item-list">
             <li class="main-nav__item"><a href="/" class="main-nav__item">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a href="/photo.html" class="main-nav__item">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__item">Конкурс</a></li>
+            <li class="main-nav__item"><a href="/photo.html" class="main-nav__item">Фотографии</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="/form.html" class="main-nav__item">Конкурс</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__item">Html Academy</a></li>
           </ul>
         </nav>
@@ -35,250 +35,125 @@
 
       <section class="page-image">
         <div class="page-image__wrapper">
-          <div class="page-image__title">Фотографии пользователей</div>
+          <div class="page-image__title">Конкурс на самое безбашенное путишествие с Пинк</div>
         </div>
       </section>
 
       <section class="page-description">
         <div class="page-image__text">
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
+          Поделитесь своей историей и получите шанс
+          выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </div>
       </section>
 
-      <section class="image-list">
+      <section class="form form--competition">
 
-        <div class="image-list__item image-list__item--main">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Анна
+        <form action="https://echo.htmlacademy.ru/" method="post">
+
+          <section class="section section--white">
+            <div class="section__wrapper">
+              <div class="form__field">
+                <label class="form__label" for="last-name">Фамилия:</label>
+                <input type="text" class="field field--text" required name="lastName" id="last-name" placeholder="Укажите фамилию *">
               </div>
-              <div class="image-list__time">
-                (<span class="js-time">5 минут</span> назад)
+              <div class="form__field">
+                <label class="form__label" for="first-name">Имя:</label>
+                <input type="text" class="field field--text" required name="firstName" id="first-name" placeholder="Введите ваше имя *">
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="middle-name">Отчество:</label>
+                <input type="text" class="field field--text" name="middleName" id="middle-name" placeholder="Ну и отчество тоже">
               </div>
             </div>
-            <div class="image-list__description">
-              Пригать или нет?
-              Напишите в коментарии свой совет и смотрите прямую
-              трансляцию в перископе, задавайте свои вопросы!
+          </section>
+
+          <section class="section section--black">
+            <div class="section__wrapper">
+              <div class="section__title section__title--form">
+                Ваши безбашенные достижения в путешествии
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements1" value="1">
+                <label class="form__label" for="achievements1">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements2" value="2">
+                <label class="form__label" for="achievements2">Обгорел на пляже</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements3" value="3">
+                <label class="form__label" for="achievements3">Видел Чака Норриса</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements4" value="4">
+                <label class="form__label" for="achievements4">Накупил сувениров</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements5" value="5">
+                <label class="form__label" for="achievements5">Удержал башню</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" class="field field--checkbox" name="achievements" id="achievements6" value="6">
+                <label class="form__label" for="achievements6">Разгромил отель</label>
+              </div>
             </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">215</span>
+          </section>
+
+          <section class="section section--white">
+            <div class="section__wrapper">
+              <div class="form__field">
+                <label class="form__label" for="phone">Номер телефона</label>
+                <input type="text" class="field field--text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="email">Адресок почты</label>
+                <input type="email" class="field field--email" required name="email" id="email" placeholder="Введите почту *">
+              </div>
+            </div>
+          </section>
+
+          <section class="section section--black">
+            <div class="section__wrapper">
+              <div class="section__title section__title--form">
+                С каким приложением путешествовали?
+              </div>
+              <div class="form__field">
+                <input type="radio" checked class="field field--radio" name="app" id="app1" value="1">
+                <label class="form__label" for="app1">Pink для iOS</label>
+              </div>
+              <div class="form__field">
+                <input type="radio" class="field field--radio" name="app" id="app2" value="2">
+                <label class="form__label" for="app2">Pink на Android</label>
+              </div>
+              <div class="form__field">
+                <input type="radio" class="field field--radio" name="app" id="app3" value="3">
+                <label class="form__label" for="app3">Windows Phone</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="section section--white">
+            <div class="section__wrapper">
+              <div class="section__title section__title--form">
+                Отпишите свои эмоции
+              </div>
+              <div class="form__field">
+                <textarea class="field field--textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
+                </textarea>
+              </div>
+              <div class="form__field">
+                <button type="submit" class="button">Отправить форму</button>
+              </div>
+              <div class="form__field">
+                <div class="form__notice">
+                  <span class="form__notice-start">*</span> - обязательные поля
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Левон
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">5 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">356</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </form>
 
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Антон
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">12 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Соседы будут рады!
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">666</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Борис
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">20 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Здесь могла быть цитата о высоком и вечном.
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">215</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Сергей
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">25 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Самая кубанская в мире!
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Максим
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">40 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Где снег-то?
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">150</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="image-list__item">
-          <div class="image-list__item-wrapper">
-            <div class="image-list__image-wrapper">
-              <div class="image-list__image-label">Панорама дня</div>
-              <img class="image-list__image" src="http://placehold.it/350x150">
-            </div>
-            <div class="image-list__title">
-              <div class="image-list__text">
-                Надежда
-              </div>
-              <div class="image-list__time">
-                (<span class="js-time">45 часов</span> назад)
-              </div>
-            </div>
-            <div class="image-list__description">
-              Всем GM и взаимные лайки!
-            </div>
-            <div class="image-list__like-wrapper">
-              <div class="like">
-                <div class="like__text">
-                  Нравится: <span class="js-like-count">2560</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="page-description">
-        <div class="page-image__text">
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </div>
-      </section>
-
-      <section class="upload-image">
-        <div class="upload-image__wrapper">
-          <img class="upload-image__image" src="http://placehold.it/350x550">
-        </div>
-        <div class="upload-image__controls">
-          <div class="upload-image__controls-wrapper">
-            <div class="upload-image__field">
-              <input type="radio" class="field-radio field-radio--crop" name="upload-image-control">
-              <label></label>
-            </div>
-            <div class="upload-image__field">
-              <input type="radio" class="field-radio field-radio--background" name="upload-image-control">
-              <label></label>
-            </div>
-            <div class="upload-image__field">
-              <input type="radio" class="field-radio field-radio--opacity" name="upload-image-control">
-              <label></label>
-            </div>
-          </div>
-          <div class="upload-image__slider">
-            <input type="range">
-          </div>
-        </div>
-        <div class="upload-image__button-list">
-          <div class="upload-image__button-item">
-            <button class="button button--primary">Запостить</button>
-          </div>
-          <div class="upload-image__button-item">
-            <button class="button button--secondary">Отмена</button>
-          </div>
-        </div>
       </section>
 
     </main>
